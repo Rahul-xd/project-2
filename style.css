@@ -1,0 +1,173 @@
+html{
+    background-image:linear-gradient(#FC5E55,#FA4083);
+}
+body{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    color: white;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/image-lion-background.png);
+    background-repeat:no-repeat;
+    background-position:top center;
+    transform: scaleX(-1);
+    z-index: -1;
+  }
+.container{
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right:auto;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 3.25rem;
+    margin-bottom: 1rem;  
+}
+h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+p{
+    line-height: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid lightgrey;
+}
+
+main{
+    min-height: 300px;
+    display:flex;
+    align-items: center;
+}
+.main2{
+    min-height: 300px;
+    box-sizing: border-box;
+    padding-top:50px; 
+}
+.herocard1{
+    flex: 2;
+    padding-right: 6.25rem;
+}
+.herocard2{
+    flex:1;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.card1{
+    background-image: url(images/image-background-card1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    width:30%;
+}
+.card2{
+    background-image: url(images/image-background-card2.jpg);
+    background-position: bottom;
+    background-size: cover;
+    width:30%;
+}
+.card3{
+    background-image: url(images/image-background-card3.jpg);
+    background-position: bottom;
+    background-size: cover;
+    width:30%;
+    min-height: 250px;
+}
+.card1,.card2,.card3{
+    padding: 20px 30px 20px 30px;
+    box-sizing: border-box;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.cards p{
+    font-size: 0.885rem;
+    line-height: 1.2rem;
+    padding-top: 10px;
+}
+.cards i{
+    font-size: 4.5rem;
+}
+.button{
+    color:#FA4083;
+    background-color: white;
+    padding: 11px 25px;
+    border-radius: 5px;
+    box-shadow: 0.5px 2px 2px rgba(0, 0, 0, 0.301);
+}
+
+a.button{
+    display: inline-block;
+    margin-top: 20px;
+}
+.button:hover{
+    background-color: rgb(160, 249, 220);
+    transition-duration: 500ms;
+}
+.navbutton{
+    padding: 11px 25px;
+    border-radius: 5px;
+    border: solid 2px white;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    position: relative;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    padding-top: 20px;
+}
+.navbutton:hover .dropdown{
+    display: block;
+}
+.dropdown .navbutton{
+    background-color: white;
+    width: 138.45px;
+    border-radius:0px;
+    text-align: center;
+    z-index: 1;
+}
+.dropdown .navbutton a{
+    color: #FA4083;
+}
+.dropdown .navbutton:hover{
+    background-color: rgb(160, 249, 220);
+    transition-duration: 500ms;
+}
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.tbox{
+    width:47%;
+    border: 2px solid white;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.tbox :last-child{
+    padding-left: 2rem;
+    font-size: 0.9rem;
+}
