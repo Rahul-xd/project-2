@@ -64,7 +64,7 @@ main{
     text-align: center;
 }
 .card1{
-    background-image: url(images/image-background-card1.jpg);
+    background-image: url(../images/image-background-card1.jpg);
     background-position: bottom;
     background-size: cover;
     width:30%;
